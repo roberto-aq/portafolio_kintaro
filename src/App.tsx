@@ -2,6 +2,7 @@ import { useState } from 'react';
 import {
 	GridExperience,
 	GridProjects,
+	GridSkills,
 	Header,
 	ModalProject,
 	Navigation,
@@ -24,7 +25,9 @@ function App() {
 
 				{/* <GridProjects setSelectedProject={setSelectedProject} /> */}
 
-				<GridExperience />
+				{/* <GridExperience /> */}
+
+				<GridSkills />
 
 				{selectedProject && (
 					<ModalProject
