@@ -1,9 +1,13 @@
+import { Header } from './components';
+
 function App() {
-  return (
-    <div>
-      Hola Mundo
-    </div>
-  )
+	return (
+		<div className='bg-slate-50'>
+			<main className='container py-10'>
+				<Header />
+			</main>
+		</div>
+	);
 }
 
-export default App
+export default App;
