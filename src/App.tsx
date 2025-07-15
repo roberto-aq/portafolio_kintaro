@@ -23,11 +23,13 @@ function App() {
 					setTabActiveIndex={setTabActiveIndex}
 				/>
 
-				{/* <GridProjects setSelectedProject={setSelectedProject} /> */}
+				{tabActiveIndex === 1 && (
+					<GridProjects setSelectedProject={setSelectedProject} />
+				)}
 
-				{/* <GridExperience /> */}
+				{tabActiveIndex === 2 && <GridExperience />}
 
-				<GridSkills />
+				{tabActiveIndex === 3 && <GridSkills />}
 
 				{selectedProject && (
 					<ModalProject
