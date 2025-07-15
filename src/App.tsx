@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import {
+	GridExperience,
 	GridProjects,
 	Header,
 	ModalProject,
@@ -21,7 +22,9 @@ function App() {
 					setTabActiveIndex={setTabActiveIndex}
 				/>
 
-				<GridProjects setSelectedProject={setSelectedProject} />
+				{/* <GridProjects setSelectedProject={setSelectedProject} /> */}
+
+				<GridExperience />
 
 				{selectedProject && (
 					<ModalProject
